@@ -1,0 +1,43 @@
+measure.form:
+  path: '/admin/structure/units'
+  defaults:
+    _title: 'Select Entity'
+    _form: '\Drupal\measure\Form\MeasureForm'
+  requirements:
+    _permission: 'access content'
+    
+measure.form1:
+  path: '/admin/structure/units/add'
+  defaults:
+    _title: 'Add Entity'
+    _form: '\Drupal\measure\Form\EntityForm'
+  requirements:
+    _permission: 'access content'
+    
+    
+measure.form2:
+  path: '/admin/structure/units/add/unit'
+  defaults:
+    _title: 'Add Unit'
+    _form: '\Drupal\measure\Form\AddForm'
+  requirements:
+    _permission: 'access content'
+    
+measure.form3:
+  path: '/user/add'
+  defaults:
+    _title: ''
+    _form: '\Drupal\measure\Form\UserForm'
+  requirements:
+    _permission: 'access content'
+    
+measure.form4:
+  path: '/user/add/select'
+  defaults:
+    _title: ''
+    _form: '\Drupal\measure\Form\UserSelectForm'
+  requirements:
+    _permission: 'access content'
+    
+
+    

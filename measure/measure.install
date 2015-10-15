@@ -1,0 +1,37 @@
+<?php 
+function measure_schema() {
+	$schema['unit'] = array(
+		'fields' => array(
+			'id' => array( 
+				'type' => 'serial',
+				'not null' => TRUE, 
+			),
+			'type' => array( 
+				'type' => 'varchar', 
+				'length' => 255, 
+				'not null' => TRUE, 
+			),
+		),
+		'primary key' => array('id'),
+	);
+	$schema['unittype'] = array(
+		'fields' => array(
+			'id' => array( 
+				'type' => 'serial',
+				'not null' => TRUE, 
+			),
+			'uid' => array( 
+				'type' => 'varchar', 
+				'length' => 255, 
+				'not null' => TRUE, 
+			),
+			'units' => array( 
+				'type' => 'varchar', 
+				'length' => 255, 
+				'not null' => TRUE, 
+			),
+		),
+		'primary key' => array('id'),
+	);
+	return $schema; 
+}
